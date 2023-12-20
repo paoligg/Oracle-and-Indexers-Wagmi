@@ -7,7 +7,7 @@ export function SwapTokens() {
 
   return (
     <div className='bg-gray-800 rounded mt-4 p-4'>
-      <div className='text-center'>
+      <div>
        <Swap/>
       </div>
     </div>
@@ -79,7 +79,8 @@ function Swap() {
 
 
   return (
-    <div className='mx-auto max-w-md text-white'>
+    <div className=' p-8 rounded-md relative'>
+      <h1 className='text-3xl font-bold p-3'>Token Swapper</h1>
       <label className='block mb-2' htmlFor="options">
         Choose the swap :
       </label>
@@ -97,9 +98,11 @@ function Swap() {
       </label>
       <input
         type="text"
-        className='w-full p-2 border border-gray-500 rounded mb-4 bg-gray-900 text-green-300'
+        className='w-full p-2 border border-gray-500 rounded mb-4 bg-gray-900 text-green-300 pr-15'
         onChange={(e) => setAmountasked(e.target.value)}
-      /> {tokenasked}
+        placeholder={tokenasked}
+      />
+
 
       {tokenasked == 'STP' && price ? (
         <div>
