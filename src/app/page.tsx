@@ -3,8 +3,9 @@ import { ConnectButton } from '../components/ConnectButton'
 import { Connected } from '../components/Connected'
 import { SwapTokens } from '../components/SwapTokens'
 import { TheGraph } from '../components/TheGraph'
+import React from 'react';
 
-export function Page() {
+const Page: React.FC = () => {
   return (
     <div className="bg-black text-white p-8">
       <h1 className="text-6xl font-bold mb-4 ">Oracle and Indexer</h1>
