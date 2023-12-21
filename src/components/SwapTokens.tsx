@@ -120,7 +120,6 @@ function Swap() {
                   <button
                     className='bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition'
                     onClick={() => handleSwapSTP(Number(amountasked))}
-                    disabled
                   >
                     Swap for STP
                   </button>
